@@ -25,7 +25,7 @@
     "fuse.js": "^6.6.2",
     "html-to-image": "^1.11.11",
     "langchain": "^0.0.102",
-    "mermaid": "^10.2.3",
+    "mermaid": "^10.3.0",
     "mysql2": "^3.4.2",
     "next": "^13.4.3",
     "node-fetch": "^3.3.1",
