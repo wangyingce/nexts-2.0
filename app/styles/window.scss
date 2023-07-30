@@ -1,0 +1,53 @@
+.window-header {
+  padding: 14px 20px;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-header-title {
+  max-width: calc(100% - 100px);
+  overflow: hidden;
+
+  .window-header-main-title {
+    font-size: 20px;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: 50vw;
+  }
+
+  .window-header-sub-title {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.window-actions {
+  display: inline-flex;
+}
+
+.window-action-button {
+  margin-left: 10px;
+}
+.uploadPDF{
+  position: relative;
+  overflow: hidden;
+  input{
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+  }
+}
