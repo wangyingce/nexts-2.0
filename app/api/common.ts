@@ -32,7 +32,7 @@ export async function requestOpenai(req: NextRequest) {
   }, 10 * 60 * 1000);
 
   const fetchUrl = `${baseUrl}/${openaiPath}`;
-  const fetchOptions: RequestInit = {
+  const fetchOptions: any = {
     headers: {
       "Content-Type": "application/json",
       Authorization: authValue,
@@ -40,6 +40,8 @@ export async function requestOpenai(req: NextRequest) {
         "OpenAI-Organization": process.env.OPENAI_ORG_ID,
       }),
     },
+    // eslint-disable-next-line
+    duplex: "half",
     cache: "no-store",
     method: req.method,
     body: req.body,
