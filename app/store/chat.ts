@@ -395,7 +395,7 @@ export const useChatStore = create<ChatStore>()(
               localStorage.setItem("pdfHistory", JSON.stringify(pdfHistory));
             }
             console.log("messageState");
-          }, 0);
+          }, 1000);
 
           //scroll to bottom
         } catch (error) {
