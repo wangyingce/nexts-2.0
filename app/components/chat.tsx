@@ -815,7 +815,7 @@ export function Chat() {
   };
   const getNameSpace = () => {
     fetch(
-      `https://nexts-vector.vercel.app/api/indexNameSpace?code=${accessStore.accessCode}`,
+      `https://talk-to-joker-nodejs.vercel.app/api/indexNameSpace?code=${accessStore.accessCode}`,
     )
       .then((response) => response.json())
       .then((result: any) => {
@@ -824,7 +824,8 @@ export function Chat() {
       });
   };
   function validateNamespace(namespace: string) {
-    const regex = /[\u4E00-\u9FA5\uF900-\uFA2D\\~`!@#$%^&*()+-=\\[\]{}|;:'",.<>?/！￥…（）—【】‘；：”“’。，、？]/;
+    const regex =
+      /[\u4E00-\u9FA5\uF900-\uFA2D\\~`!@#$%^&*()+-=\\[\]{}|;:'",.<>?/！￥…（）—【】‘；：”“’。，、？]/;
     if (regex.test(namespace)) {
       return true;
     } else {
@@ -861,7 +862,7 @@ export function Chat() {
     formData.append("file", file);
     uploadinSet(true);
     fetch(
-      `https://nexts-vector.vercel.app/api/nextPdf?fileName=${
+      `https://talk-to-joker-nodejs.vercel.app/api/nextPdf?fileName=${
         accessStore.accessCode + "_" + file.name
       }`,
       {
