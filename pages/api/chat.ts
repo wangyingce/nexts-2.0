@@ -28,12 +28,12 @@ export default async function handler(
   }
 
   //校验ic start*******
-  console.log('ic', ic);
-  if (!ic) {
-    return res.status(400).json({text: 'No IC in the request'});
-  }else if(!(icMap.get(ic))){
-    return res.status(400).json({text: 'IC check failed'});
-  }
+  // console.log('ic', ic);
+  // if (!ic) {
+  //   return res.status(400).json({text: 'No IC in the request'});
+  // }else if(!(icMap.get(ic))){
+  //   return res.status(400).json({text: 'IC check failed'});
+  // }
   //校验ic end**********
 
   if (!question) {
