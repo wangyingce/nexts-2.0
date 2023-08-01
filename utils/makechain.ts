@@ -9,7 +9,15 @@ Chat History:
 Follow Up Input: {question}
 Standalone question:`;
 
-let QA_PROMPT = ``;
+let QA_PROMPT = `As an AI assistant. Use the following context to answer the final question.
+If you don't know the answer, say you don't know. Do not try to make up an answer.
+If the question is not relevant to the context, answer politely and you are tuned to answer only questions that are relevant to the context.
+
+{context}
+
+Question: {question}
+
+Helpful answer in markdown with Chinese:`;
 
 console.log('QA_PROMPT:',QA_PROMPT);
 
