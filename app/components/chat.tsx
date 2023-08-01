@@ -815,7 +815,7 @@ export function Chat() {
   };
   const getNameSpace = () => {
     fetch(
-      `https://talk-to-joker-nodejs.vercel.app/api/indexNameSpace?code=${accessStore.accessCode}`,
+      `https://nexts-vector.vercel.app/api/indexNameSpace?code=${accessStore.accessCode}`,
     )
       .then((response) => response.json())
       .then((result: any) => {
@@ -862,7 +862,9 @@ export function Chat() {
     formData.append("file", file);
     uploadinSet(true);
     fetch(
-      `https://talk-to-joker-nodejs.vercel.app/api/nextPdf?fileName=${
+      //nexts-vector.vercel.app
+      //https://talk-to-joker-nodejs.vercel.app/api/nextPdf?fileName=
+      `https://nexts-vector.vercel.app/api/nextPdf?fileName=${
         accessStore.accessCode + "_" + file.name
       }`,
       {
